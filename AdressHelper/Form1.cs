@@ -234,7 +234,7 @@ namespace AdressHelper
             List<Data> kenDatas = Datas.Where(x => x.Ken == ken).ToList();
             List<Data> cityDatas = kenDatas.Distinct(new CityEqualityComparer()).ToList();
 
-            // 50音順に並べて区切りも入れる
+            // 50音順に並べて区切りも入れ
             cityDatas.Add(new Data("", "ｱ", "", "", "　ア ========", ""));
             cityDatas.Add(new Data("", "ｶ", "", "", "　カ ========", ""));
             cityDatas.Add(new Data("", "ｻ", "", "", "　サ ========", ""));
